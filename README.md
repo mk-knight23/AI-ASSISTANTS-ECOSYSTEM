@@ -105,3 +105,7 @@ The most powerful way to use this ecosystem is through **Agentic Orchestration**
 - [**workflows/**](file:///Users/mkazi/ALL-REPO/4-AI-ASSISTANT/AI-ASSISTANTS-ECOSYSTEM/workflows) — CI/CD templates that enforce Gitleaks and linting across all repos.
 
 ---
+
+## Repository validation
+
+This repository contains a static showcase and agent/workflow documentation. It has no Node package manifest, so CI runs `node --test test/showcase.test.cjs` and shell syntax checks directly rather than npm install, build or audit. Secret scanning remains enabled with full checkout history.
